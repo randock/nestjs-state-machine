@@ -1,5 +1,5 @@
 {
-  "name": "@depthlabs/nestjs-state-machine",
+  "name": "@alexstansfield/nestjs-state-machine",
   "version": "0.0.3",
   "description": "Finite State Machine for Nestjs framework",
   "author": "Tomasz Felczyk",
@@ -62,6 +62,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/depthlabs-io/nestjs-state-machine"
+    "url": "https://github.com/alexstansfield/nestjs-state-machine"
   }
 }
