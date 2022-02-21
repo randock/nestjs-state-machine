@@ -124,8 +124,8 @@ export class StateMachine<T> {
 
   private getSubjectCurrentState(): string {
     // Get value of object property
-    return Object.getOwnPropertyDescriptor(this.subject, this.statePropName)
-      ?.value;
+    const propertyDescriptor = Object.getOwnPropertyDescriptor(this.subject, this.statePropName);
+    return propertyDescriptor?.value || propertyDescriptor?.get?.call(this.subject);
   }
 
   private async checkGuards(
